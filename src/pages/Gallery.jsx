@@ -3,13 +3,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Gallery() {
+  // ✅ Fix for GitHub Pages: use base path for images
+  const base = import.meta.env.BASE_URL;
+
   const images = [
-    "/gallery1.jpg",
-    "/gallery2.jpg",
-    "/gallery3.jpg",
-    "/gallery4.jpg",
-    "/gallery5.jpg",
-    "/gallery6.jpg",
+    `${base}gallery1.jpg`,
+    `${base}gallery2.jpg`,
+    `${base}gallery3.jpg`,
+    `${base}gallery4.jpg`,
+    `${base}gallery5.jpg`,
+    `${base}gallery6.jpg`,
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);

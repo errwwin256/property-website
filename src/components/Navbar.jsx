@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/">
           <img
-            src="/img.png"
+            src={`${import.meta.env.BASE_URL}img.png`}
             alt="Site Logo"
             className="h-20 w-auto select-none"
           />

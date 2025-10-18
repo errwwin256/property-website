@@ -8,6 +8,9 @@ export default function Home() {
     navigate("/contact");
   };
 
+  // Base URL fix for GitHub Pages
+  const base = import.meta.env.BASE_URL;
+
   return (
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
@@ -17,7 +20,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-16 items-center bg-white">
         <div className="flex justify-center items-center w-full">
           <img
-            src="/images/living-space.png"
+            src={`${base}images/living-space.png`}
             alt="Perfect Living Space"
             className="w-full h-[450px] sm:h-[350px] md:h-[500px] object-cover"
           />
@@ -103,7 +106,7 @@ export default function Home() {
 
         <div className="flex justify-center items-center w-full order-1 md:order-2">
           <img
-            src="/images/expandable-cabin.png"
+            src={`${base}images/expandable-cabin.png`}
             alt="Expandable Cabin"
             className="w-full h-[450px] sm:h-[350px] md:h-[500px] object-cover"
           />
@@ -114,7 +117,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-16 items-center bg-white shadow-sm">
         <div className="flex justify-center items-center w-full">
           <img
-            src="/images/future-housing.png"
+            src={`${base}images/future-housing.png`}
             alt="Future Housing"
             className="w-full h-[450px] sm:h-[350px] md:h-[500px] object-cover"
           />

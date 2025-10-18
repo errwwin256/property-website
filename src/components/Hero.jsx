@@ -4,17 +4,17 @@ import { motion, AnimatePresence } from "framer-motion"; // npm install framer-m
 export default function Hero() {
   const slides = [
     {
-      image: "/houses/house1.png",
+      image: `${import.meta.env.BASE_URL}houses/house1.png`,
       title: "Find Your Dream Home",
       text: "Explore the best properties at unbeatable prices.",
     },
     {
-      image: "/houses/house2.png",
+      image: `${import.meta.env.BASE_URL}houses/house2.png`,
       title: "Modern Living Awaits You",
       text: "Discover stylish and affordable homes for your family.",
     },
     {
-      image: "/houses/house3.png",
+      image: `${import.meta.env.BASE_URL}houses/house3.png`,
       title: "Invest in Your Future",
       text: "Secure your ideal property with trusted agents.",
     },
